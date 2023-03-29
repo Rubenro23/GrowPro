@@ -1,18 +1,252 @@
 .header{
-  position: absolute;
+  overflow: hidden;
   width: 100%;
-  height: 10%;
+  height: 95%;
   left: 0%;
   top: 0%;
+}
+.rectangle{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
   background: linear-gradient(83.33deg, #7733CE 0%, #FF4351 100%);
 }
-.logo{
+
+.text2{
   position: absolute;
-  width: 10%;
-  height: 2%;
-  left: 4%;
-  right: 0.1%;
-  top: 2%;
+width: 1066px;
+height: 130px;
+left: 139px;
+top: 162px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 70px;
+/* or 140% */
+
+text-align: center;
+
+/* $white/100 */
+
+color: #FFFFFF;
+}
+
+.logo{
+  left: 15%;
+  right: 0.01%;
+  top: 20%;
   bottom: 0.06%;
   color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.img{
+  height: 90%;
+  width: 100%;
+  transform: translateY(-60px);
+}
+.fondo{
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  background-size: cover;
+}
+
+.valoracion{
+  width: 95%;
+  height: 10%;
+  left: 25%;
+  top: 70%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120%;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  color: #7A33CC
+}
+
+.rectangulo{
+  position: absolute;
+  width: 25%;
+  height: 20%;
+  left: 825px;
+  top: 401px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.estudiantes{
+  
+   font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120%;
+    line-height: 120%;
+    /* or 117% */
+
+    display: flex;
+    align-items: center;
+
+    /* Secundary */
+
+    color: #7A33CC;
+}
+
+.datos{
+  
+width: 80%;
+
+left: 1060px;
+bottom: 20%;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 100%;
+line-height: 120%;
+/* or 167% */
+
+display: flex;
+align-items: center;
+
+/* Black */
+
+color: #2F343D;
+
+}
+
+.text-intro{
+width: 500px;
+
+top: 20%;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 250%;
+line-height: 50px;
+color: #2F343D;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.texto{
+  width: 400px;
+height: 142px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+justify-content: center;
+
+
+
+color: #2F343D;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.container{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 40px 30px;
+gap: 24px;
+width: 500px;
+height: 500px;
+left: 0px;
+margin-top: 100px;
+background: #FFFFFF;
+border-radius: 20px;
+}
+
+.boton{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 30px;
+gap: 10px;
+width: 210px;
+height: 61px;
+background: #7A33CC;
+border-radius: 50px;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+
+
+
+.enviar{
+  width: 61px;
+height: 20px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #FFFFFF;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.enviarBoton{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 30px;
+gap: 10px;
+
+width: 121px;
+height: 60px;
+
+/* Secondary */
+
+background: #7A33CC;
+border-radius: 50px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+/*position: absolute;
+width: 85%;
+height: 65%;
+left: 85%;
+top: 50%;
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+}*/
+/*  width: 15%;
+  height: 40%;
+  right: 95%;
+  background: white;
+  border-radius: 10%;
+  border: 5px solid white;*/
