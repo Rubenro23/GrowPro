@@ -17,37 +17,40 @@ import icono3 from "../src/components/imagenes/icono3.png";
 import icono4 from "../src/components/imagenes/icono4.png";
 import icono5 from "../src/components/imagenes/icono5.png";
 import icono6 from "../src/components/imagenes/icono6.png";
-import playa from '../src/components/imagenes/playa.png';
-import icono7 from '../src/components/imagenes/icono7.png';
-import canada from '../src/components/imagenes/canadá.png';
-import australia from '../src/components/imagenes/australia.png';
-import nuevazelanda from '../src/components/imagenes/nuevazelanda.png';
-import irlanda from '../src/components/imagenes/irlanda.png';
+import playa from "../src/components/imagenes/playa.png";
+import icono7 from "../src/components/imagenes/icono7.png";
+import canada from "../src/components/imagenes/canadá.png";
+import australia from "../src/components/imagenes/australia.png";
+import nuevazelanda from "../src/components/imagenes/nuevazelanda.png";
+import irlanda from "../src/components/imagenes/irlanda.png";
+import flecha1 from "../src/components/imagenes/flecha1.png";
+import flecha2 from "../src/components/imagenes/flecha2.png";
+import flecha3 from '../src/components/imagenes/flecha3.png';
 function App() {
   return (
     <div className="principal">
       <img src={background} className="fondo"></img>
       <header className="header">
-        <div className="rectangle">
+        <div className="rectangle rectangleescondido">
           {" "}
           <img src={logo} className="logo" alt="logo growpro"></img>{" "}
         </div>
 
         <div className="img">
-          
           <div className="textHeader">
-            <p>Aquí empiezan el viaje 
-             hacia tus <span class='sueños'>sueños</span></p>
+            <p>
+              Aquí empiezan el viaje hacia tus{" "}
+              <span class="sueños">sueños</span>
+            </p>
           </div>
           <div className="masInfoHeader">
-                <div className="infoHeader">QUIERO MÁS INFO</div>
-             </div>
-          
+            <div className="infoHeader">QUIERO MÁS INFO</div>
+          </div>
         </div>
 
-        <div className="rectangulo">
+        <div className="rectangulo" id="rectangulo">
           <div className="row">
-            <div className="col-5 infoCard offset-md-1">
+            <div className="col-5  offset-md-1">
               <div className="valoracion">4.9</div>
               <img src={vector} className="vector"></img>
               <img src={vector} className="vector"></img>
@@ -62,7 +65,7 @@ function App() {
               <img src={L} className="L"></img>
               <img src={E} className="E"></img>
             </div>
-            <div className="col-5 infoCard offset-md-1">
+            <div className="col-5 offset-md-1">
               <div className="estudiantes">+15.000</div>
               <p className="datos">
                 Estudiantes ya han vivido la experiencia con GrowPro
@@ -72,7 +75,7 @@ function App() {
         </div>
 
         <div className="row">
-          <div className="col-6 infoCard offset-md-1">
+          <div className="col-6  offset-md-1 col-sm-12" id="infoCard">
             <div className="text-intro">
               Lorem Ipsum is simply dummy text of <b>the printing</b>
             </div>
@@ -83,14 +86,14 @@ function App() {
               type and scrambled it to make a type specimen book. It has{" "}
             </p>
 
-            <div className="masInfo">
-                  <div className="info">QUIERO MÁS INFO</div>
+            <div className="masInfo" id="infoTextIntro">
+              <div className="info">QUIERO MÁS INFO</div>
             </div>
           </div>
         </div>
 
         <div className="row">
-          <div className="col-6">
+          <div className="col-6 order-lg-1 order-2">
             <div className="container">
               <div className="row">
                 <div className="row">
@@ -130,27 +133,30 @@ function App() {
                 <div className="row">
                   <div className="col-6">
                     <label form="telefonoInput" className="form-telefono">
-                      Telefono
+                      Número de Telefono
                     </label>
                     <input
                       type="text"
-                      className="form-control"
+                      className="form-control select-form"
                       id="telefonoInput"
+                      placeholder="Spain (España)"
                     ></input>
                   </div>
                   <div className="col-6">
                     <br />
+                    <div className="telefonoInput">
                     <input
                       type="text"
                       className="form-control"
                       id="telefonoInput"
                     ></input>
+                    </div>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-6">
-                    <label form="Nacionalidad">Nacionalidad</label>
-                    <select className="form-control">
+                    <label form="Nacionalidad" className="form-nacionalidad">Nacionalidad</label>
+                    <select className="form-control select-form">
                       <option>España</option>
                       <option>Argentina</option>
                       <option>México</option>
@@ -162,7 +168,7 @@ function App() {
                     <label form="Estudiar" className="form-estudiar">
                       ¿Qué quieres estudiar?
                     </label>
-                    <select className="form-control">
+                    <select className="form-control select-form">
                       <option>Marketing</option>
                       <option>Ingles</option>
                       <option></option>
@@ -176,8 +182,16 @@ function App() {
                 <div>
                   <p className="privacidad">
                     <input type="checkbox"></input>
-                    He leído y acepto el aviso legal y la política de
-                    privacidad.
+                    He leído y acepto el{" "}
+                    <span className="morado">
+                      {" "}
+                      <u>aviso legal</u>{" "}
+                    </span>{" "}
+                    y la{" "}
+                    <span className="morado">
+                      {" "}
+                      <u>política de privacidad </u>.
+                    </span>
                   </p>
                 </div>
 
@@ -188,7 +202,7 @@ function App() {
             </div>
           </div>
 
-          <div className="col">
+          <div className="col order-lg-2 order-1">
             <p className="Lorem">
               Lorem Ipsum es simplemente el texto de relleno de las{" "}
               <b>imprentas</b>
@@ -222,8 +236,8 @@ function App() {
           </p>
         </div>
 
-        <div className="row">
-          <div className="col-4">
+        <div className="row w-100 ">
+          <div className="col-4 borde">
             <div className="rectanguloIcono">
               <img src={icono1} className="icono1"></img>
             </div>
@@ -236,7 +250,7 @@ function App() {
               Somos expertos en lo que hacemos.
             </p>
           </div>
-          <div className="col-4">
+          <div className="col-4 borde">
             <div className="rectanguloIcono">
               <img src={icono2} className="icono2"></img>
             </div>
@@ -259,8 +273,8 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="row mt-5">
-          <div className="col-4">
+        <div className="row mt-5 w-100">
+          <div className="col-4 borde" >
             <div className="rectanguloIcono">
               <img src={icono4} className="icono4"></img>
             </div>
@@ -273,7 +287,7 @@ function App() {
               App. Compartimos un mismo espíritu valiente y divertido.
             </p>
           </div>
-          <div className="col-4">
+          <div className="col-4 borde" >
             <div className="rectanguloIcono">
               <img src={icono5} className="icono5"></img>
             </div>
@@ -302,80 +316,152 @@ function App() {
         </div>
         <div className="row">
           <div className="col-6">
-          <div>
-          <div className="rectanguloIcono" id="rectanguloIcono7">
-              <img src={icono7} className="icono7"></img>
-            </div>
-            <img src={playa} className='playa'></img>
+            <div>
+              <div className="rectanguloIcono" id="rectanguloIcono7">
+                <img src={icono7} className="icono7"></img>
+              </div>
+              <img src={playa} className="playa"></img>
             </div>
           </div>
           <div className="col-6">
-            <p className="australia">Descubre Australia,¡sumérgete <b> en un mar de aventuras!</b></p>
-            <p className="textAustralia">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem egestas ultricies scelerisque senectus consequat netus justo in.
-             Neque fusce sem sagittis ante. Maecenas dui urna amet morbi. </p>
-             <p className='tick1'>
-             <img src={tickrojo} className="tickrojo"></img>
-             Asesoramiento con expertos en la vida aussie
-             </p>
-             <p className='tick2'>
-             <img src={tickrojo} className="tickrojo" ></img>
-             Gestión del curso y el visado ¡para que te olvides del papeleo!
-             </p>
-            
-             <div className="masInfo">
-                  <div className="info">QUIERO MÁS INFO</div>
-                </div>
+            <p className="australia">
+              Descubre Australia,¡sumérgete <b> en un mar de aventuras!</b>
+            </p>
+            <p className="textAustralia">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
+              egestas ultricies scelerisque senectus consequat netus justo in.
+              Neque fusce sem sagittis ante. Maecenas dui urna amet morbi.{" "}
+            </p>
+            <p className="tick1">
+              <img src={tickrojo} className="tickrojo"></img>
+              Asesoramiento con expertos en la vida aussie
+            </p>
+            <p className="tick2">
+              <img src={tickrojo} className="tickrojo"></img>
+              Gestión del curso y el visado ¡para que te olvides del papeleo!
+            </p>
+
+            <div className="masInfo">
+              <div className="info">QUIERO MÁS INFO</div>
+            </div>
           </div>
         </div>
 
         <div className="dondeEstudiar">
-          <p>¿Dónde podrás estudiar?</p>
+          <p>¿Dónde podrás estudiar? </p>
+          <div className="flechas">
+            <img src={flecha1} className="flecha1"></img>
+            <img src={flecha2} className="flecha2"></img>
+          </div>
         </div>
         <div className="row g-5">
           <div className="col-3 p-3">
-            <img src={canada} className='paises'></img>
+            <img src={canada} className="paises"></img>
             <div className="fondoTarjeta">
-              <p class='pais'>Canadá</p>
-              <p class='textPais'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin diam pretium.</p>
+              <p class="pais">Canadá</p>
+              <p class="textPais">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                ultrices sollicitudin diam pretium.
+              </p>
               <div className="verMas">
-                <div class='ver'>VER MÁS</div>
+                <div class="ver">VER MÁS</div>
               </div>
             </div>
           </div>
           <div className="col-3 p-3">
-            <img src={australia} className='paises'></img>
+            <img src={australia} className="paises"></img>
             <div className="fondoTarjeta">
-              <p class='pais'>Australia</p>
-              <p class='textPais'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin diam pretium.</p>
+              <p class="pais">Australia</p>
+              <p class="textPais">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                ultrices sollicitudin diam pretium.
+              </p>
               <div className="verMas">
-                <div class='ver'>VER MÁS</div>
+                <div class="ver">VER MÁS</div>
               </div>
             </div>
           </div>
           <div className="col-3 p-3">
-            <img src={nuevazelanda} className='paises'></img>
+            <img src={nuevazelanda} className="paises"></img>
             <div className="fondoTarjeta">
-              <p class='pais' id="paisNueva">Nueva Zelanda</p>
-              <p class='textPais'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin diam pretium.</p>
+              <p class="pais" id="paisNueva">
+                Nueva Zelanda
+              </p>
+              <p class="textPais">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                ultrices sollicitudin diam pretium.
+              </p>
               <div className="verMas">
-                <div class='ver'>VER MÁS</div>
+                <div class="ver">VER MÁS</div>
               </div>
             </div>
           </div>
           <div className="col-3 p-3">
-            <img src={irlanda} className='paises'></img>
+            <img src={irlanda} className="paises"></img>
             <div className="fondoTarjeta">
-             <p class='pais'>Irlanda</p>
-             <p class='textPais'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin diam pretium.</p>
-             <div className="verMas">
-                <div class='ver'>VER MÁS</div>
+              <p class="pais">Irlanda</p>
+              <p class="textPais">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                ultrices sollicitudin diam pretium.
+              </p>
+              <div className="verMas">
+                <div class="ver">VER MÁS</div>
               </div>
             </div>
           </div>
         </div>
+
+        <div className="grower">
+          <p>
+            ¿Te unes a nuestra <b> comunidad grower ?</b>
+          </p>
+        </div>
+        <div>
+          <p className="textGrower">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type pecimen book.
+          </p>
+        </div>
+
+        <div className="masInfo" id="masInfoGrower">
+          <div className="info">QUIERO MÁS INFO</div>
+        </div>
       </main>
+
+      <footer className="piedepagina">
+        <div className="row w-100 text-center">
+          <div className="col-6">
+            <p>©2021 GrowPro • Todos los derechos reservados</p>
+          </div>
+          <div className="col-6">
+            <p>Aviso legal | Política de cookies | Política de privacidad</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
+
+{/*addEventListener('load', () => {
+  var rectangle = document.getElementById('rectangle');
+  var lastScrollPosition = 0;
+  
+  window.addEventListener('scroll', function() {
+  var currentScrollPosition = window.scrollY;
+  
+  if (currentScrollPosition > lastScrollPosition) {
+  // Scrolling hacia abajo
+  rectangle.classList.add('rectangle');
+  
+  } else {
+  // Scrolling hacia arriba
+  rectangle.classList.remove('rectangle');
+  }
+  
+  lastScrollPosition = currentScrollPosition;
+  })
+  }, false);*/}
 
 export default App;
