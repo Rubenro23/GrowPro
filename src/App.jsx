@@ -31,9 +31,12 @@ function App() {
     <div className="principal">
       <img src={background} className="fondo"></img>
       <header className="header">
-        <div className="rectangle rectangleescondido">
+        <div className="rectangle">
           {" "}
-          <img src={logo} className="logo" alt="logo growpro"></img>{" "}
+          <img src={logo} className="logo" id="logomovil" alt="logo growpro"></img>{" "}
+            <div className="masInfoHeader" id="infoTitulo">
+              <div className="infoHeader" id="infotituloText">QUIERO MÁS INFO</div>
+            </div>
         </div>
 
         <div className="img">
@@ -43,7 +46,7 @@ function App() {
               <span class="sueños">sueños</span>
             </p>
           </div>
-          <div className="masInfoHeader">
+          <div className="masInfoHeader" id="botonInfo">
             <div className="infoHeader">QUIERO MÁS INFO</div>
           </div>
         </div>
@@ -58,12 +61,14 @@ function App() {
               <img src={vector} className="vector"></img>
               <img src={vector} className="vector"></img>
               <p>354 opiniones</p>
+              <div className="google" >
               <img src={G} className="G"></img>
               <img src={O} className="O"></img>
               <img src={O1} className="O1"></img>
               <img src={G1} className="G1"></img>
               <img src={L} className="L"></img>
               <img src={E} className="E"></img>
+              </div>
             </div>
             <div className="col-5 offset-md-1">
               <div className="estudiantes">+15.000</div>
@@ -94,10 +99,10 @@ function App() {
 
         <div className="row">
           <div className="col-6 order-lg-1 order-2">
-            <div className="container">
+            <div className="container" id="formulario">
               <div className="row">
                 <div className="row">
-                  <div className="col-6">
+                  <div className="col-lg-6 col-sm-12">
                     <label form="nombreInput" className="form-nombre">
                       Nombre
                     </label>
@@ -107,7 +112,7 @@ function App() {
                       id="nombreInput"
                     ></input>
                   </div>
-                  <div className="col-6">
+                  <div className="col-lg-6 col-sm-12">
                     <label form="apellidosInput" className="form-apellidos">
                       Apellidos
                     </label>
@@ -131,20 +136,24 @@ function App() {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-6">
                     <label form="telefonoInput" className="form-telefono">
                       Número de Telefono
                     </label>
-                    <input
+                </div>
+                <div className="row">
+                  <div className="col-lg-6 col-5">
+                    
+                    <select
                       type="text"
                       className="form-control select-form"
-                      id="telefonoInput"
-                      placeholder="Spain (España)"
-                    ></input>
+                      id="Inputelefono"
+                      >
+                      <option>Spain</option>
+                      </select>
                   </div>
-                  <div className="col-6">
+                  <div className="col-lg-6 col-7">
                     <br />
-                    <div className="telefonoInput">
+                    <div className="Inputtelefono2">
                     <input
                       type="text"
                       className="form-control"
@@ -154,7 +163,7 @@ function App() {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-6">
+                  <div className="col-lg-6 col-sm-12">
                     <label form="Nacionalidad" className="form-nacionalidad">Nacionalidad</label>
                     <select className="form-control select-form">
                       <option>España</option>
@@ -164,7 +173,7 @@ function App() {
                       <option>Chile</option>
                     </select>
                   </div>
-                  <div className="col-6">
+                  <div className="col-lg-6 col-sm-12">
                     <label form="Estudiar" className="form-estudiar">
                       ¿Qué quieres estudiar?
                     </label>
@@ -203,11 +212,11 @@ function App() {
           </div>
 
           <div className="col order-lg-2 order-1">
-            <p className="Lorem">
+            <p className="Lorem" id="lorem-text">
               Lorem Ipsum es simplemente el texto de relleno de las{" "}
               <b>imprentas</b>
             </p>
-            <div className="ipsum">
+            <div className="ipsum" id="lorem">
               <p>
                 <img src={tickrojo} className="tickrojo"></img>Lorem Ipsum es
                 simplemente el texto de relleno de las imprentas.
@@ -224,6 +233,9 @@ function App() {
                 <img src={tickrojo} className="tickrojo"></img>Lorem Ipsum es
                 simplemente el texto de relleno de las imprentas.
               </p>
+              <div className="masInfo" id="masInfoButton">
+                <div className="info">QUIERO MÁS INFO</div>
+              </div>
             </div>
           </div>
         </div>
@@ -237,7 +249,7 @@ function App() {
         </div>
 
         <div className="row w-100 ">
-          <div className="col-4 borde">
+          <div className="col-lg-4  col-12 borde">
             <div className="rectanguloIcono">
               <img src={icono1} className="icono1"></img>
             </div>
@@ -250,7 +262,7 @@ function App() {
               Somos expertos en lo que hacemos.
             </p>
           </div>
-          <div className="col-4 borde">
+          <div className="col-lg-4  col-12 borde">
             <div className="rectanguloIcono">
               <img src={icono2} className="icono2"></img>
             </div>
@@ -261,7 +273,7 @@ function App() {
               de 20 destinos, pero la lista no para de crecer.
             </p>
           </div>
-          <div className="col-4">
+          <div className="col-lg-4  col-12">
             <div className="rectanguloIcono">
               <img src={icono3} className="icono3"></img>
             </div>
@@ -274,7 +286,7 @@ function App() {
           </div>
         </div>
         <div className="row mt-5 w-100">
-          <div className="col-4 borde" >
+          <div className="col-lg-4  col-12 borde" >
             <div className="rectanguloIcono">
               <img src={icono4} className="icono4"></img>
             </div>
@@ -287,7 +299,7 @@ function App() {
               App. Compartimos un mismo espíritu valiente y divertido.
             </p>
           </div>
-          <div className="col-4 borde" >
+          <div className="col-lg-4  col-12 borde" >
             <div className="rectanguloIcono">
               <img src={icono5} className="icono5"></img>
             </div>
@@ -300,7 +312,7 @@ function App() {
               colaboraciones con las escuelas y seguros
             </p>
           </div>
-          <div className="col-4">
+          <div className="col-lg-4  col-12">
             <div className="rectanguloIcono">
               <img src={icono6} className="icono6"></img>
             </div>
@@ -315,7 +327,7 @@ function App() {
           </div>
         </div>
         <div className="row">
-          <div className="col-6">
+          <div className="col-lg-6 col-12 d-flex justify-content-end">
             <div>
               <div className="rectanguloIcono" id="rectanguloIcono7">
                 <img src={icono7} className="icono7"></img>
@@ -323,7 +335,7 @@ function App() {
               <img src={playa} className="playa"></img>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-lg-6 col-12">
             <p className="australia">
               Descubre Australia,¡sumérgete <b> en un mar de aventuras!</b>
             </p>
@@ -348,14 +360,14 @@ function App() {
         </div>
 
         <div className="dondeEstudiar">
-          <p>¿Dónde podrás estudiar? </p>
+          <p>¿Dónde <b>podrás estudiar?</b> </p>
           <div className="flechas">
             <img src={flecha1} className="flecha1"></img>
             <img src={flecha2} className="flecha2"></img>
           </div>
         </div>
         <div className="row g-5">
-          <div className="col-3 p-3">
+          <div className="col-lg-3  col-12 p-3 mt-lg-1 mt-sm-5 tarjetaPaises">
             <img src={canada} className="paises"></img>
             <div className="fondoTarjeta">
               <p class="pais">Canadá</p>
@@ -368,7 +380,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="col-3 p-3">
+          <div className="col-lg-3  col-12 p-3 mt-1 tarjetaPaises">
             <img src={australia} className="paises"></img>
             <div className="fondoTarjeta">
               <p class="pais">Australia</p>
@@ -381,7 +393,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="col-3 p-3">
+          <div className="col-lg-3  col-12 p-3 mt-1 tarjetaPaises">
             <img src={nuevazelanda} className="paises"></img>
             <div className="fondoTarjeta">
               <p class="pais" id="paisNueva">
@@ -396,7 +408,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="col-3 p-3">
+          <div className="col-lg-3  col-12 p-3 mt-1 tarjetaPaises">
             <img src={irlanda} className="paises"></img>
             <div className="fondoTarjeta">
               <p class="pais">Irlanda</p>
@@ -432,10 +444,10 @@ function App() {
 
       <footer className="piedepagina">
         <div className="row w-100 text-center">
-          <div className="col-6">
+          <div className="col-lg-6 col-12 order-lg-1 order-2">
             <p>©2021 GrowPro • Todos los derechos reservados</p>
           </div>
-          <div className="col-6">
+          <div className="col-lg-6 col-12 order-lg-2 order-1">
             <p>Aviso legal | Política de cookies | Política de privacidad</p>
           </div>
         </div>
