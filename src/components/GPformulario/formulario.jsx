@@ -1,4 +1,5 @@
 import React from 'react';
+import './formulario.css';
 
 const Formulario = () => {
     return (
@@ -114,7 +115,7 @@ const Formulario = () => {
                   </p>
                 </div>
 
-                <div className="enviarBoton">
+                <div className="enviarBoton" id='enviarBoton'>
                   <input
                     className="enviar"
                     type="submit"

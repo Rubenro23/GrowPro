@@ -1,12 +1,13 @@
 import React from 'react';
-import icono7 from './imagenes/icono7.png';
-import playa from './imagenes/playa.png';
-import tickrojo from '../components/imagenes/tickrojo.png';
+import icono7 from '../imagenes/icono7.png';
+import playa from '../imagenes/playa.png';
+import tickrojo from '../imagenes/tickrojo.png';
+import './DescubreAustralia.css';
 
 const DescubreAustralia = () => {
     return (
         <div>
-            <div className="row">
+            <div className="row mt-lg-5 mt-0 mb-lg-5 mb-0">
           <div className="col-lg-6 col-12 d-flex justify-content-end">
             <div>
               <div className="rectanguloIcono" id="rectanguloIcono7">

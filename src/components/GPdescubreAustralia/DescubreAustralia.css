@@ -1,0 +1,132 @@
+#rectanguloIcono7 {
+    width: 110px;
+    height: 110px;
+    transform: translate(-40px, 160px);
+  }
+  .playa {
+    width: 450px;
+    height: 440px;
+    left: 49px;
+    top: 46px;
+    border-radius: 50px;
+  }
+  .australia {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 56px;
+    margin-top: 50px;
+    margin-left: 40px;
+  
+    color: #2f343d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .textAustralia {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 40px;
+  
+    color: #2f343d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .tick1 {
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+  .tick2 {
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  .masInfo {
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+  .info {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 35px;
+    gap: 10px;
+    width: 207px;
+    height: 55px;
+    background: #7a33cc;
+    border-radius: 50px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-size: 16px;
+    border: 0;
+    
+  }
+
+
+  @media(max-width:800px){
+    #rectanguloIcono7 {
+        width: 80px;
+        height: 80px;
+      }
+      .icono7 {
+        width: 60px;
+        height: 60px;
+      }
+      .playa {
+        width: 288px;
+        height: 280px;
+        box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        margin-top: -50px;
+      }
+      .australia {
+        width: 295px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 42px;
+      }
+      .textAustralia {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .tick1 {
+        width: 257px;
+        left: 0px;
+        top: 0px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+      }
+    
+      .tick2 {
+        width: 257px;
+        left: 0px;
+        top: 0px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+      }
+      .tickrojo {
+        width: 41px;
+      }
+      #masinfobutton2{
+        margin-left: 30px;
+      }
+  }

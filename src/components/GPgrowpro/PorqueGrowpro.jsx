@@ -1,22 +1,23 @@
 import React from "react";
-import icono1 from "./imagenes/icono1.png";
-import icono2 from "./imagenes/icono2.png";
-import icono3 from "./imagenes/icono3.png";
-import icono4 from "./imagenes/icono4.png";
-import icono5 from "./imagenes/icono5.png";
-import icono6 from "./imagenes/icono6.png";
+import icono1 from "../imagenes/icono1.png";
+import icono2 from "../imagenes/icono2.png";
+import icono3 from "../imagenes/icono3.png";
+import icono4 from "../imagenes/icono4.png";
+import icono5 from "../imagenes/icono5.png";
+import icono6 from "../imagenes/icono6.png";
+import './PorqueGrowpro.css';
 const PorqueGrowpro = () => {
   return (
     <div>
-      <div className="pregunta">
+      <div className="pregunta" id="pregunta">
         <p>
           ¿Por qué <span className="growpro">GrowPro?</span>
         </p>
       </div>
 
-      <div className="row w-100 ">
-        <div className="col-lg-4  col-12 borde">
-          <div className="rectanguloIcono">
+      <div className="row w-100">
+        <div className="col-lg-4  col-12 borde  mt-3">
+          <div className="rectanguloIcono mb-2">
             <img src={icono1} className="icono1"></img>
           </div>
           <p className="textIcono">
@@ -28,8 +29,8 @@ const PorqueGrowpro = () => {
             expertos en lo que hacemos.
           </p>
         </div>
-        <div className="col-lg-4  col-12 borde">
-          <div className="rectanguloIcono">
+        <div className="col-lg-4  col-12 borde   mt-3">
+          <div className="rectanguloIcono mb-2">
             <img src={icono2} className="icono2"></img>
           </div>
           <p className="textIcono">20 ciudades de destinos</p>
@@ -39,8 +40,8 @@ const PorqueGrowpro = () => {
             de 20 destinos, pero la lista no para de crecer.
           </p>
         </div>
-        <div className="col-lg-4  col-12">
-          <div className="rectanguloIcono">
+        <div className="col-lg-4  col-12  mt-3 ">
+          <div className="rectanguloIcono mb-2">
             <img src={icono3} className="icono3"></img>
           </div>
           <p className="textIcono">A tu lado en destino ¡pura experiencia!</p>
@@ -52,8 +53,8 @@ const PorqueGrowpro = () => {
         </div>
       </div>
       <div className="row mt-5 w-100">
-        <div className="col-lg-4  col-12 borde">
-          <div className="rectanguloIcono">
+        <div className="col-lg-4  col-12 borde mt-lg-3 mt-0" >
+          <div className="rectanguloIcono mb-2" id="community">
             <img src={icono4} className="icono4"></img>
           </div>
           <p className="textIcono2">
@@ -65,8 +66,8 @@ const PorqueGrowpro = () => {
             App. Compartimos un mismo espíritu valiente y divertido.
           </p>
         </div>
-        <div className="col-lg-4  col-12 borde">
-          <div className="rectanguloIcono">
+        <div className="col-lg-4  col-12 borde  mt-3  ">
+          <div className="rectanguloIcono mb-2">
             <img src={icono5} className="icono5"></img>
           </div>
           <p className="textIcono2">
@@ -78,8 +79,8 @@ const PorqueGrowpro = () => {
             colaboraciones con las escuelas y seguros
           </p>
         </div>
-        <div className="col-lg-4  col-12">
-          <div className="rectanguloIcono">
+        <div className="col-lg-4  col-12 mt-3 mb-lg-0 mb-4">
+          <div className="rectanguloIcono mb-2">
             <img src={icono6} className="icono6"></img>
           </div>
           <p className="textIcono2">

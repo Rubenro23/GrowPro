@@ -1,0 +1,30 @@
+.valoracion {
+    width: 95%;
+    left: 25%;
+    top: 70%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    color: #7a33cc;
+  }
+  .google img {
+    vertical-align: baseline;
+  }
+  .G1{
+    transform: translateY(7px);
+  }
+
+  @media(max-width: 800px){
+    .valoracion{
+        font-size: 25px;
+        line-height: 35px;
+      }
+      .opiniones{
+        font-size: 12px;
+        line-height: 18px;
+      }
+  }

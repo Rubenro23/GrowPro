@@ -1,36 +1,38 @@
 import React from 'react';
-import tickrojo from './tickrojo.png';
+import tickrojo from '../imagenes/tickrojo.png';
+import './Listado.css';
 
 const LoremIpsum = () => {
+  
     return (
         <div>
             <p className="Lorem" id="lorem-text">
-              Lorem Ipsum es simplemente el texto de relleno de las{" "}
+              Lorem Ipsum es simplemente el texto de relleno de las
               <b>imprentas</b>
             </p>
-            <div className="ipsum" id="lorem">
+            <article className="ipsum" id="lorem">
               <div>
+                <img src={tickrojo} className="tickrojo"></img>
+                <span className="ms-2 ">
+                  Lorem Ipsum es simplemente el texto de relleno de las
+                  imprentas.
+                </span>
+              </div>
+              <div className="imprentas"> 
                 <img src={tickrojo} className="tickrojo"></img>
                 <span className="ms-2">
                   Lorem Ipsum es simplemente el texto de relleno de las
                   imprentas.
                 </span>
               </div>
-              <div>
+              <div className="imprentas">
                 <img src={tickrojo} className="tickrojo"></img>
                 <span className="ms-2">
                   Lorem Ipsum es simplemente el texto de relleno de las
                   imprentas.
                 </span>
               </div>
-              <div>
-                <img src={tickrojo} className="tickrojo"></img>
-                <span className="ms-2">
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas.
-                </span>
-              </div>
-              <div>
+              <div className="imprentas">
                 <img src={tickrojo} className="tickrojo"></img>
                 <span className="ms-2">
                   Lorem Ipsum es simplemente el texto de relleno de las
@@ -40,9 +42,9 @@ const LoremIpsum = () => {
               <div className="masInfo" id="masInfoButton">
                 <button className="info">QUIERO MÁS INFO</button>
               </div>
-            </div>
+            </article>
           
-        </div>
+       </div>
     );
 }
 

@@ -1,0 +1,55 @@
+.text-intro {
+    width: 600px;
+    top: 20%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    margin-top: -100px;
+    font-size: 250%;
+    line-height: 50px;
+    color: #2f343d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .texto {
+    width: 370px;
+    margin-top: 15px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    justify-content: center;
+    color: #2f343d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .masInfo {
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+  #infoTextIntro {
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  .info {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 35px;
+    gap: 10px;
+    width: 207px;
+    height: 55px;
+    background: #7a33cc;
+    border-radius: 50px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-size: 16px;
+    border: 0;
+    
+  }

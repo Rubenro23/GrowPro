@@ -1,0 +1,73 @@
+.img {
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      url("../imagenes/header\ \(2\).png");
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+  }
+  
+  .textHeader {
+    width: 100%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  .sueños {
+    padding: 0 13px;
+    background: #ff5766;
+    border-radius: 50px;
+  }
+  .masInfoHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 10px;
+    height: 61px;
+    left: 567px;
+    top: 333px;
+    background: #ffffff;
+    border-radius: 50.1283px;
+  }
+  .infoHeader {
+    color: #7a33cc;
+    font-family: "Poppins";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    border: 0;
+    background-color: transparent;
+  }
+
+
+  @media(max-width:800px){
+    #imgmovil{
+        background-image: url(../imagenes/imgmovil.png);
+        height: 385px; 
+      }
+      
+    .textHeader {
+        font-size: 30px;
+        line-height: 45px;
+      }
+      #botonInfo {
+        font-size: 16px;
+        margin-bottom: 50px;
+      }
+      .infoHeader {
+        font-size: 16px;
+        
+      }
+  }

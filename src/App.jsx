@@ -11,7 +11,7 @@ import G1 from "../src/components/imagenes/Google/G1.png";
 import L from "../src/components/imagenes/Google/L (2).png";
 import E from "../src/components/imagenes/Google/E (2).png";
 import icono1 from "../src/components/imagenes/icono1.png";
-import tickrojo from "../src/components/imagenes/tickrojo.png";
+import tickrojo from "./components/imagenes/tickrojo.png";
 import icono2 from "../src/components/imagenes/icono2.png";
 import icono3 from "../src/components/imagenes/icono3.png";
 import icono4 from "../src/components/imagenes/icono4.png";
@@ -23,18 +23,20 @@ import canada from "../src/components/imagenes/canadá.png";
 import australia from "../src/components/imagenes/australia.png";
 import nuevazelanda from "../src/components/imagenes/nuevazelanda.png";
 import irlanda from "../src/components/imagenes/irlanda.png";
-import eeuu from '../src/components/imagenes/eeuu.png';
-import malta from '../src/components/imagenes/malta.png';
+import eeuu from "../src/components/imagenes/eeuu.png";
+import malta from "../src/components/imagenes/malta.png";
 import flecha1 from "../src/components/imagenes/flecha1.png";
 import flecha2 from "../src/components/imagenes/flecha2.png";
-import Formulario from "./components/imagenes/formulario";
-import LoremIpsum from "./components/imagenes/LoremIpsum";
-import DescubreAustralia from "./components/DescubreAustralia";
-import ThePrinting from "./ThePrinting";
-import Estudiantes from "./components/Estudiantes";
-import Valoracion from "./Valoracion";
-import PorqueGrowpro from "./components/PorqueGrowpro";
-
+import Formulario from "./components/GPformulario/formulario";
+import Listado from "./components/GPlistado/Listado";
+import DescubreAustralia from "./components/GPdescubreAustralia/DescubreAustralia";
+import ThePrinting from "./components/GPthePrinting/ThePrinting";
+import Estudiantes from "./components/GPestudiantes/Estudiantes";
+import Valoracion from "./components/GPvaloracion/Valoracion";
+import PorqueGrowpro from "./components/GPgrowpro/PorqueGrowpro";
+import Rectangulo from "./components/GPrectangulo/Rectangulo";
+import ListForm from "./components/GPListForm/ListForm";
+import ImagenText from "./components/GPImagenText/ImagenText";
 
 
 function App() {
@@ -69,18 +71,20 @@ function App() {
     },
     {
       imagen: eeuu,
-      titulo:"Estados Unidos",
-      texto:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Duis ultrices sollicitudin diam pretium.",
-      boton:"VER MÁS",
-      id:"eeuu",
+      titulo: "Estados Unidos",
+      texto:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Duis ultrices sollicitudin diam pretium.",
+      boton: "VER MÁS",
+      id: "eeuu",
     },
     {
       imagen: malta,
-      titulo:"Malta",
-      texto:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Duis ultrices sollicitudin diam pretium.",
-      boton:"VER MÁS",
-      id:"malta",
-    }
+      titulo: "Malta",
+      texto:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Duis ultrices sollicitudin diam pretium.",
+      boton: "VER MÁS",
+      id: "malta",
+    },
   ];
 
   return (
@@ -101,28 +105,9 @@ function App() {
           </div>
         </div>
 
-        <div className="img" id="imgmovil">
-          <div className="textHeader">
-            <p>
-              Aquí empiezan el viaje hacia tus
-              <span class="sueños">sueños</span>
-            </p>
-          </div>
-          <div className="masInfoHeader" id="botonInfo">
-            <button className="infoHeader">QUIERO MÁS INFO</button>
-          </div>
-        </div>
+        <ImagenText></ImagenText>
 
-        <div className="rectangulo" id="rectangulo">
-          <div className="row">
-            <div className="col-5  offset-md-1">
-              <Valoracion></Valoracion>
-            </div>
-            <div className="col-5 m-auto  offset-md-1">
-              <Estudiantes></Estudiantes>
-            </div>
-          </div>
-        </div>
+        <Rectangulo></Rectangulo>
 
         <div className="row">
           <div className="col-6  offset-md-1 col-sm-12" id="infoCard">
@@ -130,23 +115,15 @@ function App() {
           </div>
         </div>
 
-        <div className="row">
-          <div className="col-lg-6 col-sm-12 order-lg-1 order-2">
-            <Formulario></Formulario>
-          </div>
-
-          <div className="col order-lg-2 order-1" id="loremIpsum">
-            <LoremIpsum></LoremIpsum>
-          </div>
-        </div>
+        <ListForm></ListForm>
       </header>
 
-      <main className="backgroundBody" class="margenIcono">
+      <main className="backgroundBody margenIcono">
         <PorqueGrowpro></PorqueGrowpro>
 
         <DescubreAustralia></DescubreAustralia>
 
-        <div className="dondeEstudiar">
+        <div className="dondeEstudiar mb-4 ">
           <p>
             ¿Dónde <b>podrás estudiar?</b>{" "}
           </p>
@@ -161,11 +138,12 @@ function App() {
             return (
               <div
                 className="col-lg-3  col-12 p-3 mt-lg-1 mt-sm-5 tarjetaPaises"
-                key={index} id={tarjetas.id} 
+                key={index}
+                id={tarjetas.id}
               >
                 <img src={tarjetas.imagen} className="paises"></img>
                 <div className="fondoTarjeta">
-                  <p class="pais">{tarjetas.titulo}</p>
+                  <p className="pais">{tarjetas.titulo}</p>
                   <p class="textPais">{tarjetas.texto}</p>
                   <div className="verMas">
                     <button class="ver">{tarjetas.boton}</button>
@@ -190,10 +168,13 @@ function App() {
           </p>
         </div>
 
-        <div className="masInfo" id="masInfoGrower">
+        <div className="masInfo mt-2" id="masInfoGrower">
           <button className="info">QUIERO MÁS INFO</button>
         </div>
+
       </main>
+
+      
 
       <footer className="piedepagina">
         <div className="row w-100 text-center">
@@ -209,32 +190,30 @@ function App() {
   );
 }
 
+{
+  window.addEventListener(
+    "load",
+    () => {
+      var rectangle = document.getElementById("rectangle");
+      var boton = document.getElementById("infoTitulo");
+      var lastScrollPosition = 400;
 
-
-  {
-    window.addEventListener('load', () => {
-    var rectangle = document.getElementById('rectangle');
-    var boton = document.getElementById('infoTitulo');
-    var lastScrollPosition = 400;
-    
-    window.addEventListener('scroll', function() {
-    var currentScrollPosition = window.scrollY;
-    console.log(currentScrollPosition);
-    if (currentScrollPosition > lastScrollPosition) {
-    // Scrolling hacia abajo
-    boton.classList.add('botonshow');
-    //rectangle.classList.add('rectanglescondido');
-    
-    } else {
-    // Scrolling hacia arriba
-    //rectangle.classList.remove('rectanglescondido');
-    boton.classList.remove('botonshow');
-    }
-    
-    
-    
-    })
-    }, false);}
-
+      window.addEventListener("scroll", function () {
+        var currentScrollPosition = window.scrollY;
+        console.log(currentScrollPosition);
+        if (currentScrollPosition > lastScrollPosition) {
+          // Scrolling hacia abajo
+          boton.classList.add("botonshow");
+          //rectangle.classList.add('rectanglescondido');
+        } else {
+          // Scrolling hacia arriba
+          //rectangle.classList.remove('rectanglescondido');
+          boton.classList.remove("botonshow");
+        }
+      });
+    },
+    false
+  );
+}
 
 export default App;

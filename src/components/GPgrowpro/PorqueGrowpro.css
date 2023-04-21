@@ -1,0 +1,76 @@
+.pregunta {
+    margin-top: 150px;
+    margin-bottom: 60px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    color: #2f343d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    align-self: flex-start;
+  }
+  
+  .growpro {
+    color: #ff4351;
+  }
+  .rectanguloIcono {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .textIcono {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2f343d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #878787;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+   
+  .textIcono2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2f343d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  @media(max-width:800px){
+    #pregunta{
+      font-size: 30px;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+    .borde{
+      border-right: 0;
+    }
+    
+    #community{
+      margin-top: -20px;
+    }
+  }

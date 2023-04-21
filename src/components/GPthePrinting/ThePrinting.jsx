@@ -1,4 +1,5 @@
 import React from 'react';
+import './ThePrinting.css';
 
 const ThePrinting = () => {
     return (

@@ -1,980 +1,600 @@
 .principal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.header {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 95%;
-  left: 0%;
-  top: 0%;
-}
-.rectangle {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  position: fixed;
-  top: 0%;
-  z-index: 1;
-  width: 100%;
-  height: 50px;
-  background: linear-gradient(83.33deg, #7733ce 0%, #ff4351 100%);
-}
-
-.rectanglescondido{
-  top: -90px;
-}
-
-
-
-
-
-
-.text2 {
-  position: absolute;
-  width: 1066px;
-  height: 130px;
-  left: 139px;
-  top: 162px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 70px;
-
-  text-align: center;
-  color: #ffffff;
-}
-
-.logo {
-  width: 146px;
-  height: 21px;
-  left: 15%;
-  right: 0.01%;
-  top: 20%;
-  bottom: 0.06%;
-  color: #ffffff;
-  margin-left: 70px;
-}
-.img {
-  height: 500px;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("../src/components/imagenes/header\ \(2\).png");
-  flex-direction: column;
-  justify-content: center;
-  background-repeat: no-repeat;
-}
-
-.google img {
-  vertical-align: baseline;
-}
-.G1{
-  transform: translateY(7px);
-}
-.textHeader {
-  width: 100%;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 70px;
-  text-align: center;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-}
-
-.sueños {
-  padding: 0 13px;
-  background: #ff5766;
-  border-radius: 50px;
-}
-
-.masInfoHeader {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 30px;
-  gap: 10px;
-  height: 61px;
-  left: 567px;
-  top: 333px;
-  background: #ffffff;
-  border-radius: 50.1283px;
-}
-
-.infoHeader {
-  color: #7a33cc;
-  font-family: "Poppins";
-  font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-  border: 0;
-  background-color: transparent;
-}
-
-.fondo {
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  background-size: cover;
-}
-
-.valoracion {
-  width: 95%;
-  left: 25%;
-  top: 70%;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35px;
-  display: flex;
-  align-items: center;
-  color: #7a33cc;
-}
-
-.rectangulo {
-  transform: translateY(-60px);
-  align-self: flex-end;
-  margin-right: 70px;
-  padding: 20px 10px;
-  width: 34%;
-  height: 20%;
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
-}
-
-.estudiantes {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35px;
-  display: flex;
-  align-items: center;
-  color: #7a33cc;
- 
-}
-
-.datos {
-  width: 80%;
-
-  left: 1060px;
-  bottom: 20%;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
-  display: flex;
-  align-items: center;
-  color: #2f343d;
-}
-
-.text-intro {
-  width: 600px;
-  top: 20%;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  margin-top: -100px;
-  font-size: 250%;
-  line-height: 50px;
-  color: #2f343d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-#infoTextIntro {
-  margin-top: 40px;
-  margin-left: 5px;
-}
-
-.texto {
-  width: 370px;
-  margin-top: 15px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  justify-content: center;
-  color: #2f343d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 40px 30px;
-  gap: 24px;
-  width: 500px;
-  left: 0px;
-  margin-top: 100px;
-  background: #ffffff;
-  border-radius: 20px;
-}
-
-.select-form {
-  background-image: url(../src/components/imagenes/flecha3.png);
-  background-repeat: no-repeat;
-  background-position: right 35px bottom 12px; 
-}
-
-.form-correo {
-  margin-top: 10px;
-}
-.form-telefono {
-  margin-top: 10px;
-}
-.telefonoInput {
-  margin-top: 10px;
-}
-#Inputelefono{
-  transform: translateY(17px);
-}
-.Inputtelefono2{
-  transform: translateY(-7px);
-}
-.form-nacionalidad {
-  margin-top: 10px;
-}
-.form-estudiar {
-  margin-top: 10px;
-}
-.flecha3 {
-  position: absolute;
-  left: 25%;
-  right: 25%;
-  top: 35.79%;
-  bottom: 33.33%;
-
-  background: #000000;
-}
-
-.boton {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 30px;
-  gap: 10px;
-  width: 210px;
-  height: 61px;
-  background: #7a33cc;
-  border-radius: 50px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.enviar {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #ffffff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  background-color: transparent;
-  border: 0;
-}
-
-.enviarBoton {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 30px;
-  width: 121px;
-  height: 60px;
-  background: #7a33cc;
-  border-radius: 50px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: auto;
-}
-
-.Lorem {
-  width: 530px;
-  height: 157px;
-  margin-top: 100px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 56px;
-  color: #2f343d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.ipsum {
-  width: 470px;
-  height: 30px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #2f343d;
-}
-#imprentas{
-  margin-top: 14px;
-}
-.privacidad {
-  margin-top: 20px;
-}
-#tickmorado{
-  width: 14px;
-  height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+    left: 0%;
+    top: 0%;
+  }
+  .rectangle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(83.33deg, #7733ce 0%, #ff4351 100%);
+  }
   
-}
-#tickmorado :active{
-  background-image: url(../src/components/imagenes/checkmorado.png);
-  
- 
-}
-
-.morado {
-  color: #7a33cc;
-}
-
-.pregunta {
-  margin-top: 70px;
-  margin-bottom: 60px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 52px;
-  color: #2f343d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  align-self: flex-start;
-}
-.growpro {
-  color: #ff4351;
-}
-
-.backgroundBody {
-  background: rgba(128, 128, 128, 0.979);
-}
-
-.rectanguloIcono {
-  background: white;
-  padding: 10px;
-  border-radius: 20px;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.margenIcono {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-body {
-  background: #f9f9f9;
-}
-
-.textIcono {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  color: #2f343d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.textIcono2 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  color: #2f343d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.text {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #878787;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.playa {
-  width: 450px;
-  height: 440px;
-  left: 49px;
-  top: 46px;
-  border-radius: 50px;
-}
-
-.australia {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 56px;
-  margin-top: 50px;
-  margin-left: 40px;
-
-  color: #2f343d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.textAustralia {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  margin-left: 40px;
-
-  color: #2f343d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.tick1 {
-  margin-top: 30px;
-  margin-left: 40px;
-}
-.tick2 {
-  margin-top: 20px;
-  margin-left: 40px;
-}
-
-.masInfo {
-  margin-top: 40px;
-  margin-left: 15px;
-}
-
-.info {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 35px;
-  gap: 10px;
-  width: 207px;
-  height: 55px;
-  background: #7a33cc;
-  border-radius: 50px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  font-size: 16px;
-  border: 0;
-  
-}
-
-.dondeEstudiar {
-  width: 100%;
-  height: 52px;
-  margin-top: 50px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 52px;
-  color: #2f343d;
-  display: flex;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  align-items: center;
-  justify-content: space-between;
-}
-.dondeEstudiar p {
-  float: left;
-  margin-bottom: 0;
-}
-.flecha1 {
-  margin-right: 20px;
-}
-
-.paises {
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-  margin-top: 40px;
-  left: 0px;
-  top: 0px;
-}
-
-#rectanguloIcono7 {
-  width: 110px;
-  height: 110px;
-  transform: translate(-40px, 160px);
-}
-
-.fondoTarjeta {
-  width: 100%;
-  background: white;
-  border-radius: 0 0 20px 20px;
-  padding-bottom: 15px;
-}
-
-.tarjetaPaises {
-  display: flex;
-  flex-direction: column;
-}
-
-.verMas {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  width: 110px;
-  height: 36px;
-  margin: auto;
-  background: #7a33cc;
-  border-radius: 500px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-}
-.ver {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #ffffff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  border: 0;
-  background-color: transparent;
-}
-
-.pais {
-  margin-left: 20px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 23.4813px;
-  line-height: 35px;
-  color: #2f343d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-#paisNueva {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 23.4813px;
-  line-height: 35px;
-  color: #2f343d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.textPais {
-  margin-left: 20px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
-  color: #878787;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.grower {
- 
-  margin-top: 150px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 56px;
-  text-align: center;
-  color: #2f343d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.textGrower {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  text-align: center;
-  color: #2f343d;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.piedepagina {
-  width: 100%;
-  background: rgba(217, 217, 217, 0.3);
-}
-#masInfoGrower {
-  margin-bottom: 100px;
-  
-}
-
-.borde {
-  border-right: #878787 1px solid;
-}
-
-@media (max-width: 800px) {
-  
-  #rectangle{
-    top:0;
-   }
-
-  .botonshow{
-    display: flex !important; 
+  .rectanglescondido{
+    top: -90px;
   }
   
   
-
-  #imgmovil{
-    background-image: url(../src/components/imagenes/imgmovil.png);
-    height: 385px;
-    
+  
+  
+  
+  
+  .text2 {
+    position: absolute;
+    width: 1066px;
+    height: 130px;
+    left: 139px;
+    top: 162px;
+  
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+  
+    text-align: center;
+    color: #ffffff;
   }
-  .textHeader {
-    font-size: 30px;
-    line-height: 45px;
+  
+  .logo {
+    width: 146px;
+    height: 21px;
+    left: 15%;
+    right: 0.01%;
+    top: 20%;
+    bottom: 0.06%;
+    color: #ffffff;
+    margin-left: 70px;
   }
+ 
+  
+  
+ 
+  
+  
+  
+  .masInfoHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 10px;
+    height: 61px;
+    left: 567px;
+    top: 333px;
+    background: #ffffff;
+    border-radius: 50.1283px;
+  }
+  
   .infoHeader {
+    color: #7a33cc;
+    font-family: "Poppins";
+    font-style: normal;
     font-size: 16px;
-    
-  }
-  #rectangulo {
-    align-self: center;
-    margin-right: 0;
-    width: 90%;
-    
-  }
-  .valoracion{
-    font-size: 25px;
-    line-height: 35px;
-  }
-  .opiniones{
-    font-size: 12px;
-    line-height: 18px;
-  }
-  .estudiantes{
-    font-size: 25px;
-    line-height: 35px;
-  }
-  .datos{
-    font-size: 12px;
-    line-height: 18px;
-  }
-  #infoCard {
-    display: none;
-  }
-  #lorem {
-    margin-bottom: 400px;
-    width:100%;
-    align-self: center;
-    margin-top: -40px;
-  }
-  .ipsum{
-    font-size: 16px;
-  }
-  #lorem-text {
-    width: 95%;
-    margin-top: 10px;
-    margin-bottom: 70px;
-    font-size: 30px;
-    line-height: 42px;
-  }
-
-  #loremIpsum{
-    margin-left: 30px;
-   }
-   
-  #formulario {
-    margin-top: 40px;
-    padding: 24px;
-    width: 319px;
-  }
-  #botonForm {
-    align-self: center;
-  }
-  #masInfoButton {
-    display: block;
-  }
-
-  #infoTitulo{
-    display: none;
-    height: 30px;
-    margin-right: 30px;
-    padding: 0px 0px;
-    
-  }
-  #infotituloText{
-    font-size: 10px;
     line-height: 20px;
+    font-weight: 500;
+    border: 0;
+    background-color: transparent;
+  }
+  
+  .fondo {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    background-size: cover;
+  }
+  
+  
+  
+  
+ 
+  
+ 
+  
+ 
+  
+  #infoTextIntro {
+    margin-top: 40px;
+    margin-left: 5px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  #imprentas{
+    margin-top: 14px;
+  }
+  .privacidad {
+    margin-top: 20px;
+  }
+  #tickmorado{
+    width: 14px;
+    height: 14px;
+    
+  }
+  #tickmorado :active{
+    background-image: url(../src/components/imagenes/checkmorado.png);
+    
+   
+  }
+  
+  .morado {
+    color: #7a33cc;
+  }
+  
+  
+  
+  
+  
+  .margenIcono {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  body {
+    background: #f9f9f9;
+  }
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .masInfo {
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+  
+  .info {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 35px;
+    gap: 10px;
+    width: 207px;
+    height: 55px;
+    background: #7a33cc;
+    border-radius: 50px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-size: 16px;
+    border: 0;
+    
+  }
+  
+  .dondeEstudiar {
+    width: 100%;
+    height: 52px;
+    margin-top: 50px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    color: #2f343d;
+    display: flex;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dondeEstudiar p {
+    float: left;
+    margin-bottom: 0;
+  }
+  .flecha1 {
+    margin-right: 20px;
+  }
+  
+  .paises {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    margin-top: 40px;
+    left: 0px;
+    top: 0px;
+  }
+  
+  
+  
+  .fondoTarjeta {
+    width: 100%;
+    background: white;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 15px;
+  }
+  
+  .tarjetaPaises {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .verMas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 110px;
+    height: 36px;
+    margin: auto;
+    background: #7a33cc;
+    border-radius: 500px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  .ver {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    
-  }
-
-  
-  .flechas {
-    /*En pequeño no se ve*/
-    display: none;
-  }
-
-  .tarjetaPaises {
-    flex-direction: row;
-  }
-  .paises {
-    width: 155px;
-
-    border-radius: 10px 0 0 10px;
-    margin-top: 0;
-  }
-  .fondoTarjeta {
-    width: 155px;
-    border-radius: 0 10px 10px 0;
-  }
-  .verMas {
-    width: 90px;
-    height: 26px;
-    margin-top: -12px;
-  }
-  .borde {
-    border-right: 0;
-  }
-  .pregunta {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-
-  .playa {
-    width: 288px;
-    height: 280px;
-    box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    margin-top: -50px;
-  }
-  #rectanguloIcono7 {
-    width: 80px;
-    height: 80px;
-  }
-  .icono7 {
-    width: 60px;
-    height: 60px;
-  }
-  .australia {
-    width: 295px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 42px;
-  }
-  .textAustralia {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  .tick1 {
-    width: 257px;
-    left: 0px;
-    top: 0px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-  }
-
-  .tick2 {
-    width: 257px;
-    left: 0px;
-    top: 0px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-  }
-  .tickrojo {
-    width: 41px;
-  }
-
-  #botonInfo {
-    font-size: 16px;
-    margin-bottom: 50px;
-  }
-
-  .dondeEstudiar {
-    width: 320px;
-    height: 73px;
-    left: 0px;
-    top: 0px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 42px;
-  }
-
-  .grower {
-    width: 319px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 42px;
-    margin-top: 10px;
+    font-size: 13px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
     text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: 0;
+    background-color: transparent;
   }
-  .textGrower {
-    width: 321px;
+  
+  .pais {
+    margin-left: 20px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.4813px;
+    line-height: 35px;
+    color: #2f343d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  #paisNueva {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.4813px;
+    line-height: 35px;
+    color: #2f343d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .textPais {
+    margin-left: 20px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #878787;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  .grower {
+   
+    margin-top: 150px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 56px;
+    text-align: center;
+    color: #2f343d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .textGrower {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
     line-height: 32px;
     text-align: center;
-  }
-
-
-  #logomovil{
-    margin-left: 10px;
-    width: 96px;
-    height: 13px;
-  }
-  .rectangle{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #Inputelefono{
-    background-position: right 10px bottom 12px;
-  }
-
-  .form-control{
-    font-size: 14px;
-    line-height: 20px;
-    }
-  
-  .enviarBoton{
-    width: 271px;
-    height: 60px;
-  }
-  .enviar{
-    margin: auto;
-    font-size: 16px;
-    line-height: 20px;
-  }
- 
-  
-  #masinfobutton2{
-    margin-left: 30px;
-  }
- 
-  #malta , #eeuu{
-    display: flex;
-  }
-}
-
-@media (min-width: 800px) {
-  
-  .botonshow{
-    display: flex !important; 
+    color: #2f343d;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
   }
   
-  #infoCard {
-    display: block;
+  .piedepagina {
+    width: 100%;
+    background: rgba(217, 217, 217, 0.3);
   }
-  #masInfoButton {
-    display: none;
+  #masInfoGrower {
+    margin-bottom: 100px;
+    
   }
-
-  .flechas {
-    /*En grande se ve*/
-    display: block;
-  }
-
+  
   .borde {
     border-right: #878787 1px solid;
   }
-
-  #infoTitulo {
-    display: none;
-    height: 30px;
-    margin-left: 850px;
+  
+  @media (max-width: 800px) {
+    
+    #rectangle{
+      top:0;
+     }
+  
+    .botonshow{
+      display: flex !important; 
+    }
+    
+    
+  
+    
+    .infoHeader {
+      font-size: 16px;
+      
+    }
+   
+   
+    #infoCard {
+      display: none;
+    }
+    #lorem {
+      margin-bottom: 400px;
+      width:100%;
+      align-self: center;
+      margin-top: -40px;
+    }
+    
+   
+  
+    #loremIpsum{
+      margin-left: 30px;
+     }
+     
+    #formulario {
+      margin-top: 40px;
+      padding: 24px;
+      width: 319px;
+    }
+    #botonForm {
+      align-self: center;
+    }
+    #masInfoButton {
+      display: block;
+    }
+  
+    #infoTitulo{
+      display: none;
+      height: 30px;
+      margin-right: 30px;
+      padding: 0px 0px;
+      
+    }
+    #infotituloText{
+      font-size: 10px;
+      line-height: 20px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      
+    }
+  
+    
+    .flechas {
+      /*En pequeño no se ve*/
+      display: none;
+    }
+  
+    .tarjetaPaises {
+      flex-direction: row;
+    }
+    .paises {
+      width: 155px;
+  
+      border-radius: 10px 0 0 10px;
+      margin-top: 0;
+    }
+    .fondoTarjeta {
+      width: 155px;
+      border-radius: 0 10px 10px 0;
+    }
+    .verMas {
+      width: 90px;
+      height: 26px;
+      margin-top: -12px;
+    }
+    .borde {
+      border-right: 0;
+    }
+    .pregunta {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+  
+    .playa {
+      width: 288px;
+      height: 280px;
+      box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      margin-top: -50px;
+    }
+    #rectanguloIcono7 {
+      width: 80px;
+      height: 80px;
+    }
+    .icono7 {
+      width: 60px;
+      height: 60px;
+    }
+    
+    
+  
+    .tick1 {
+      width: 257px;
+      left: 0px;
+      top: 0px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  
+    .tick2 {
+      width: 257px;
+      left: 0px;
+      top: 0px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+    }
+    .tickrojo {
+      width: 41px;
+    }
+  
+    #botonInfo {
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+  
+    .dondeEstudiar {
+      width: 320px;
+      height: 73px;
+      left: 0px;
+      top: 0px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 42px;
+    }
+  
+    .grower {
+      width: 319px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 42px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .textGrower {
+      width: 321px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      text-align: center;
+    }
+  
+  
+    #logomovil{
+      margin-left: 10px;
+      width: 96px;
+      height: 13px;
+    }
+    .rectangle{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    
+  
+    
+    
+    .enviarBoton{
+      width: 271px;
+      height: 60px;
+    }
+    .enviar{
+      margin: auto;
+      font-size: 16px;
+      line-height: 20px;
+    }
+   
+    
+    #masinfobutton2{
+      margin-left: 30px;
+    }
+   
+    #malta , #eeuu{
+      display: flex;
+    }
   }
   
-  #malta , #eeuu{
-    display: none;
-  }
+  @media (min-width: 800px) {
+    
+    .botonshow{
+      display: flex !important; 
+    }
+    
+    #infoCard {
+      display: block;
+    }
+    #masInfoButton {
+      display: none;
+    }
   
-}
+    .flechas {
+      /*En grande se ve*/
+      display: block;
+    }
+  
+    .borde {
+      border-right: #878787 1px solid;
+    }
+  
+    #infoTitulo {
+      display: none;
+      height: 30px;
+      margin-left: 850px;
+    }
+    
+    #malta , #eeuu{
+      display: none;
+    }
+    
+  }

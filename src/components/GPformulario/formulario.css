@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 30px;
+    gap: 24px;
+    width: 500px;
+    left: 0px;
+    margin-top: 70px;
+    background: #ffffff;
+    border-radius: 20px;
+  }
+  
+  .select-form {
+    background-image: url(../imagenes/flecha3.png);
+    background-repeat: no-repeat;
+    background-position: right 35px bottom 12px; 
+  }
+  
+  .form-correo {
+    margin-top: 10px;
+  }
+  .form-telefono {
+    margin-top: 10px;
+  }
+  .telefonoInput {
+    margin-top: 10px;
+  }
+  #Inputelefono{
+    transform: translateY(17px);
+  }
+  .Inputtelefono2{
+    transform: translateY(-7px);
+  }
+  .form-nacionalidad {
+    margin-top: 10px;
+  }
+  .form-estudiar {
+    margin-top: 10px;
+  }
+  .flecha3 {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 35.79%;
+    bottom: 33.33%;
+  
+    background: #000000;
+  }
+  
+  .boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 10px;
+    width: 210px;
+    height: 61px;
+    background: #7a33cc;
+    border-radius: 50px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  .enviar {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .enviarBoton {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    width: 121px;
+    height: 60px;
+    background: #7a33cc;
+    border-radius: 50px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: auto;
+  }
+  .privacidad {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 800px){
+    #formulario {
+        margin-top: 40px;
+        padding: 24px;
+        width: 319px;
+      }
+
+      #Inputelefono{
+        background-position: right 10px bottom 12px;
+      }
+
+      .form-control{
+        font-size: 14px;
+        line-height: 20px;
+        }
+      #enviarBoton{
+        width: 271px;
+        height: 60px;
+        }
+      }
+  
