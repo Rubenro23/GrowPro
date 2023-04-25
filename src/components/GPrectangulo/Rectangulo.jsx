@@ -5,7 +5,7 @@ import "./Rectangulo.css";
 
 const Rectangulo = () => {
   return (
-    <div>
+    
       <div className="rectangulo" id="rectangulo">
         <div className="row">
           <div className="col-5  offset-md-1">
@@ -16,7 +16,7 @@ const Rectangulo = () => {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 

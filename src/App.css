@@ -102,7 +102,10 @@
     background-size: cover;
   }
   
-  
+  .colocar{
+    margin-left: 60%;
+    margin-right: 100px;
+  }
   
   
  
@@ -365,7 +368,9 @@
     }
     
     
-  
+    .colocar{
+      margin: auto;
+    }
     
     .infoHeader {
       font-size: 16px;

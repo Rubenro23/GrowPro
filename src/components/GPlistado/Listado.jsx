@@ -5,7 +5,7 @@ import './Listado.css';
 const LoremIpsum = () => {
   
     return (
-        <div>
+        <div className="col order-lg-2 order-1" id="loremIpsum">
             <p className="Lorem" id="lorem-text">
               Lorem Ipsum es simplemente el texto de relleno de las
               <b>imprentas</b>

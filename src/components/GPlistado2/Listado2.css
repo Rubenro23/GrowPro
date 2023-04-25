@@ -1,0 +1,11 @@
+.titulo{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 56px;
+    color: #2f343d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

@@ -37,6 +37,9 @@ import PorqueGrowpro from "./components/GPgrowpro/PorqueGrowpro";
 import Rectangulo from "./components/GPrectangulo/Rectangulo";
 import ListForm from "./components/GPListForm/ListForm";
 import ImagenText from "./components/GPImagenText/ImagenText";
+import ImgList from "./components/GpImgList/ImgList";
+
+
 
 
 function App() {
@@ -106,9 +109,9 @@ function App() {
         </div>
 
         <ImagenText></ImagenText>
-
+          <div className="colocar">
         <Rectangulo></Rectangulo>
-
+          </div>
         <div className="row">
           <div className="col-6  offset-md-1 col-sm-12" id="infoCard">
             <ThePrinting></ThePrinting>
@@ -171,12 +174,13 @@ function App() {
         <div className="masInfo mt-2" id="masInfoGrower">
           <button className="info">QUIERO MÁS INFO</button>
         </div>
-
+       
+         <ImgList></ImgList>
+         
       </main>
 
-      
 
-      <footer className="piedepagina">
+     <footer className="piedepagina">
         <div className="row w-100 text-center">
           <div className="col-lg-6 col-12 order-lg-1 order-2">
             <p>©2021 GrowPro • Todos los derechos reservados</p>
