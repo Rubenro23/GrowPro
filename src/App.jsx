@@ -38,9 +38,8 @@ import Rectangulo from "./components/GPrectangulo/Rectangulo";
 import ListForm from "./components/GPListForm/ListForm";
 import ImagenText from "./components/GPImagenText/ImagenText";
 import ImgList from "./components/GpImgList/ImgList";
-
-
-
+import { Getdatos } from "./services/datos";
+import { useState, useEffect } from "react";
 
 function App() {
   const tarjetas = [
@@ -90,6 +89,17 @@ function App() {
     },
   ];
 
+  const [test, setTest] = useState(null);
+  useEffect(() => {
+    const social = Getdatos().then((response) => {
+      setTest(response);
+      console.log(test);
+      console.log(response.social.gp_socials[0].gp_stars);
+    });
+  }, []);
+
+  console.log();
+
   return (
     <div className="principal">
       <img src={background} className="fondo"></img>
@@ -109,9 +119,23 @@ function App() {
         </div>
 
         <ImagenText></ImagenText>
-          <div className="colocar">
-        <Rectangulo></Rectangulo>
-          </div>
+        <div className="colocar">
+          {/*datos ?
+              <Rectangulo valoracion={data.social.gp_socials[0].gp_stars}
+              opiniones ={datos.social.gp_socials[0].n_reviews}
+              estudiantes ={datos.global.gp_social_variable.gp_number}
+              descripcion={datos.global.gp_social_variable.gp_description}/>
+              :
+              <div><p>Loading...</p></div>*/}
+          {test && test.social && (
+            <Rectangulo
+              valoracion={test.social.gp_socials[0].gp_stars}
+              opiniones={test.social.gp_socials[0].n_reviews}
+              estudiantes={test.global.gp_social_variable[0].gp_number}
+              descripcion={test.global.gp_social_variable[0].gp_description}
+            ></Rectangulo>
+          )}
+        </div>
         <div className="row">
           <div className="col-6  offset-md-1 col-sm-12" id="infoCard">
             <ThePrinting></ThePrinting>
@@ -174,13 +198,17 @@ function App() {
         <div className="masInfo mt-2" id="masInfoGrower">
           <button className="info">QUIERO MÁS INFO</button>
         </div>
-       
-         <ImgList></ImgList>
-         
+
+        {test && test.social && (
+          <ImgList
+            valoracion={test.social.gp_socials[0].gp_stars}
+            opiniones={test.social.gp_socials[0].n_reviews}
+            estudiantes={test.global.gp_social_variable[0].gp_number}
+            descripcion={test.global.gp_social_variable[0].gp_description}></ImgList>
+        )}
       </main>
 
-
-     <footer className="piedepagina">
+      <footer className="piedepagina">
         <div className="row w-100 text-center">
           <div className="col-lg-6 col-12 order-lg-1 order-2">
             <p>©2021 GrowPro • Todos los derechos reservados</p>

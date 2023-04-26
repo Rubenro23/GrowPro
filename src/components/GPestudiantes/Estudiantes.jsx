@@ -1,12 +1,12 @@
 import React from 'react';
 import './Estudiantes.css';
 
-const Estudiantes = () => {
+const Estudiantes = (estudiantes) => {
     return (
         <div>
-            <div className="estudiantes">+15.000</div>
+            <div className="estudiantes">+{estudiantes.estudiantes}</div>
               <p className="datos">
-                Estudiantes ya han vivido la experiencia con GrowPro
+                {estudiantes.descripcion}
               </p>
         </div>
     );

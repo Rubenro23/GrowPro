@@ -6,7 +6,7 @@ import Listado2 from '../GPlistado2/Listado2';
 import './ImgList.css';
 import Rectangulo from '../GPrectangulo/Rectangulo';
 
-const ImgList = () => {
+const ImgList = (props) => {
     return (
       
       <div className="row imgList">
@@ -15,7 +15,11 @@ const ImgList = () => {
         <div className='imgrectangulo'>
           <Img></Img>
           
-          <Rectangulo></Rectangulo>
+          <Rectangulo
+            valoracion={props.valoracion}
+            opiniones={props.opiniones}
+            estudiantes={props.estudiantes}
+            descripcion={props.descripcion}></Rectangulo>
           
         </div>
         

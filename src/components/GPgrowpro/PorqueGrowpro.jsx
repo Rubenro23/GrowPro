@@ -7,6 +7,44 @@ import icono5 from "../imagenes/icono5.png";
 import icono6 from "../imagenes/icono6.png";
 import './PorqueGrowpro.css';
 const PorqueGrowpro = () => {
+  const iconos = [
+    {
+      imagen:icono1,
+      texticono:"+15.000 growers ya han viajado con nosotros",
+      texto:"Nuestro fin es que todo el mundo tenga la oportunidad de vivir una experiencia que le cambie la vida.¡Vamos por el buen camino! Somos expertos en lo que hacemos.",
+      borde: true,
+    },
+    {
+      imagen:icono2,
+      texticono:"20 ciudades de destinos",
+      texto:"Trabajamos únicamente en las ciudades en las que podemos estar presencialmente ¡nuestra comunidad es lo primero! Ahora disponemos de 20 destinos, pero la lista no para de crecer.",
+      borde:true
+    },
+    {
+      imagen:icono3,
+      texticono:"A tu lado en destino ¡pura experiencia!",
+      texto:"Tenemos equipo y oficinas en todas nuestras ciudades y estamos contigo desde que aterrizas. Atención de 10 y eventazos en los que conocernos.",    
+      borde: false
+      },
+      {
+        imagen:icono4,
+        texticono:"GrowPro Community",
+        texto:"Desde el momento en el que viajas con GrowPro, ya formas parte de una comunidad global, conectada a través de eventos y la GrowPro App. Compartimos un mismo espíritu valiente y divertido.",
+        borde:true
+      },
+      {
+        imagen:icono5,
+        texticono:"Servicio Gratuito",
+        texto:"Sí, has leído bien. El asesoramiento que recibes de GrowPro es  gratuito, nuestro sistema de ganancias funciona a través de las colaboraciones con las escuelas y seguros",
+        borde:true
+      },
+      {
+        imagen:icono6,
+        texticono:"GrowPro App",
+        texto:"Somos pioneros en el sector en tener una app propia. Con la GrowPro App llevamos el acompañamiento en destino a otro nivel. ¡Conecta con los eventos y la comunidad de tu ciudad!",
+        borde:false
+      }
+    ]
   return (
     <div>
       <div className="pregunta" id="pregunta">
@@ -16,20 +54,31 @@ const PorqueGrowpro = () => {
       </div>
 
       <div className="row w-100">
-        <div className="col-lg-4  col-12 borde  mt-3">
+      {iconos.map((iconos, index) => {
+        return(
+        <div className="col-lg-4  col-12 borde  mt-3" key={index}>
           <div className="rectanguloIcono mb-2">
-            <img src={icono1} className="icono1"></img>
+            <img src={iconos.imagen} className="icono1"></img>
           </div>
           <p className="textIcono">
-            <strong>+15.000 growers </strong>ya han viajado con nosotros
+            {iconos.texticono}
           </p>
           <p className="text">
-            Nuestro fin es que todo el mundo tenga la oportunidad de vivir una
-            experiencia que le cambie la vida. ¡Vamos por el buen camino! Somos
-            expertos en lo que hacemos.
+            {iconos.texto}
           </p>
         </div>
-        <div className="col-lg-4  col-12 borde   mt-3">
+      );
+      })}
+       
+      </div>
+    </div>
+  );
+};
+
+export default PorqueGrowpro;
+
+
+{/* <div className="col-lg-4  col-12 borde   mt-3">
           <div className="rectanguloIcono mb-2">
             <img src={icono2} className="icono2"></img>
           </div>
@@ -91,10 +140,4 @@ const PorqueGrowpro = () => {
             App llevamos el acompañamiento en destino a otro nivel. ¡Conecta con
             los eventos y la comunidad de tu ciudad!
           </p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default PorqueGrowpro;
+        </div> */}

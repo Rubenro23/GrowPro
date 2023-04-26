@@ -9,16 +9,16 @@ import E from "../imagenes/Google/E (2).png";
 import './Valoracion.css';
 
 
-const Valoracion = () => {
+const Valoracion = (opiniones) => {
     return (
         <div>
-            <div className="valoracion">4.9</div>
+            <div className="valoracion">{opiniones.valoracion}</div>
               <img src={vector} className="vector"></img>
               <img src={vector} className="vector"></img>
               <img src={vector} className="vector"></img>
               <img src={vector} className="vector"></img>
               <img src={vector} className="vector"></img>
-              <p className="opiniones">354 opiniones</p>
+              <p className="opiniones">{opiniones.opiniones} opiniones</p>
               <div className="google">
                 <img src={G} className="G"></img>
                 <img src={O} className="O"></img>

@@ -17,9 +17,7 @@
 }
 
 @media (min-width:800px){
-   .imgrectangulo{
-    display: block;
-   } 
+   
    .List{
     display: block;
    }

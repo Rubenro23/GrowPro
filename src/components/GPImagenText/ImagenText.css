@@ -56,6 +56,7 @@
     #imgmovil{
         background-image: url(../imagenes/imgmovil.png);
         height: 385px; 
+        background-size: cover;
       }
       
     .textHeader {
