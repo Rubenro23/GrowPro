@@ -26,7 +26,10 @@
   }
   .imprentas{
     margin-top: 15px;
+    display: flex;
+    align-items: center;
   }
+  
   #lorem-text{
     margin-bottom: 20px;
   }
@@ -50,8 +53,8 @@
       .ipsum{
         font-size: 16px;
       }
-      .tickrojo {
-        width: 41px;
+      .red {
+        width: 80px;
       }
       #masInfoButton {
         display: block;

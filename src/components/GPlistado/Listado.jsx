@@ -32,15 +32,15 @@ const LoremIpsum = () => {
             <article className="ipsum" id="lorem">
             {Texto.map((Texto,index)=>{
         return(
-          <div>
+        
           <div className='imprentas'> 
-                <img src={Texto.imagen} className="tickrojo"></img>         
-                <span className="ms-2 ">
+                <img src={Texto.imagen} className="red"></img>         
+                <span className="ms-2 imprentas-text">
                   {Texto.texto}
                 </span>
                 </div>
 
-              </div>
+              
         )
       })}
              {/* <div>

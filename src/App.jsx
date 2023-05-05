@@ -40,6 +40,8 @@ import ImagenText from "./components/GPImagenText/ImagenText";
 import ImgList from "./components/GpImgList/ImgList";
 import { Getdatos } from "./services/datos";
 import { useState, useEffect } from "react";
+import Header from './components/GPHeader/Header';
+import HeaderMeeting from "./components/GPHeaderMeeting/HeaderMeeting";
 
 function App() {
   const tarjetas = [
@@ -93,59 +95,19 @@ function App() {
   useEffect(() => {
     const social = Getdatos().then((response) => {
       setTest(response);
-      console.log(test);
-      console.log(response.social.gp_socials[0].gp_stars);
+      
     });
   }, []);
 
   console.log();
-
+  const headerBarc = true;
   return (
-    <div className="principal">
-      <img src={background} className="fondo"></img>
-      <header className="header">
-        <div className="rectangle" id="rectangle">
-          <img
-            src={logo}
-            className="logo"
-            id="logomovil"
-            alt="logo growpro"
-          ></img>
-          <div className="masInfoHeader" id="infoTitulo">
-            <button className="infoHeader" id="infotituloText">
-              QUIERO MÁS INFO
-            </button>
-          </div>
-        </div>
-
-        <ImagenText></ImagenText>
-        <div className="colocar">
-          {/*datos ?
-              <Rectangulo valoracion={data.social.gp_socials[0].gp_stars}
-              opiniones ={datos.social.gp_socials[0].n_reviews}
-              estudiantes ={datos.global.gp_social_variable.gp_number}
-              descripcion={datos.global.gp_social_variable.gp_description}/>
-              :
-              <div><p>Loading...</p></div>*/}
-          {test && test.social && (
-            <Rectangulo
-              valoracion={test.social.gp_socials[0].gp_stars}
-              opiniones={test.social.gp_socials[0].n_reviews}
-              estudiantes={test.global.gp_social_variable[0].gp_number}
-              descripcion={test.global.gp_social_variable[0].gp_description}
-            ></Rectangulo>
-          )}
-        </div>
-        <div className="row">
-          <div className="col-6  offset-md-1 col-sm-12" id="infoCard">
-            <ThePrinting></ThePrinting>
-          </div>
-        </div>
-
-        <ListForm></ListForm>
-      </header>
-
+    <div>
+      {headerBarc ? <HeaderMeeting/> : <Header/>}
+      
+      <div className="principal">
       <main className="backgroundBody margenIcono">
+      
         <PorqueGrowpro></PorqueGrowpro>
 
         <DescubreAustralia></DescubreAustralia>
@@ -177,6 +139,7 @@ function App() {
                   </div>
                 </div>
               </div>
+              
             );
           })}
         </div>
@@ -206,6 +169,8 @@ function App() {
             estudiantes={test.global.gp_social_variable[0].gp_number}
             descripcion={test.global.gp_social_variable[0].gp_description}></ImgList>
         )}
+
+        
       </main>
 
       <footer className="piedepagina">
@@ -218,34 +183,12 @@ function App() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+      </div>
   );
+ 
 }
 
-{
-  window.addEventListener(
-    "load",
-    () => {
-      var rectangle = document.getElementById("rectangle");
-      var boton = document.getElementById("infoTitulo");
-      var lastScrollPosition = 400;
 
-      window.addEventListener("scroll", function () {
-        var currentScrollPosition = window.scrollY;
-        console.log(currentScrollPosition);
-        if (currentScrollPosition > lastScrollPosition) {
-          // Scrolling hacia abajo
-          boton.classList.add("botonshow");
-          //rectangle.classList.add('rectanglescondido');
-        } else {
-          // Scrolling hacia arriba
-          //rectangle.classList.remove('rectanglescondido');
-          boton.classList.remove("botonshow");
-        }
-      });
-    },
-    false
-  );
-}
 
 export default App;

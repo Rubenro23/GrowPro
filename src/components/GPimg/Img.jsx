@@ -7,7 +7,7 @@ import './Img.css';
 const Img = () => {
     return (
         <div className='row '>
-        <img src={imagen} className='imagen'></img>
+        <img src={imagen} className='imagen' id='imgcanada'></img>
         <div className='row'>
         
         </div>

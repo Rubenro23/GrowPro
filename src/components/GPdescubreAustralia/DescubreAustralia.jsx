@@ -8,15 +8,15 @@ const DescubreAustralia = () => {
     return (
         <div>
             <div className="row mt-lg-5 mt-0 mb-lg-5 mb-0">
-          <div className="col-lg-6 col-12 d-flex justify-content-end">
-            <div>
+          <div className="col-lg-6 col-12 mb-5  d-flex justify-content-end">
+            <div className='imagen'>
               <div className="rectanguloIcono" id="rectanguloIcono7">
                 <img src={icono7} className="icono7"></img>
               </div>
               <img src={playa} className="playa"></img>
             </div>
           </div>
-          <div className="col-lg-6 col-12 mt-3 mb-5">
+          <div className="col-lg-6 col-12 mt-3 mb-5 ">
             <p className="australia">
               Descubre Australia,¡sumérgete <b> en un mar de aventuras!</b>
             </p>
@@ -27,13 +27,13 @@ const DescubreAustralia = () => {
             </p>
 
             <div className="tick1">
-              <img src={tickrojo} className="tickrojo"></img>
+              <img src={tickrojo} className="rojo" ></img>
               <span className="ms-2">
                 Asesoramiento con expertos en la vida aussie
               </span>
             </div>
             <div className="tick2">
-              <img src={tickrojo} className="tickrojo"></img>
+              <img src={tickrojo} className="rojo"></img>
               <span className="ms-2">
                 Gestión del curso y el visado ¡para que te olvides del papeleo!
               </span>

@@ -10,7 +10,7 @@ const ImgList = (props) => {
     return (
       
       <div className="row imgList">
-    <div className="col-6">
+    <div className="col-lg-6 col-12 order-sm-1">
       
         <div className='imgrectangulo'>
           <Img></Img>
@@ -25,7 +25,7 @@ const ImgList = (props) => {
         
       
     </div>
-    <div className="col-6 List">
+    <div className="col-lg-6 col-12 order-sm-2 List" id='List'>
       <Listado></Listado>
       </div>
 

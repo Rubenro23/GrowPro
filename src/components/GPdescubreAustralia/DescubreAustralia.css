@@ -1,8 +1,9 @@
 #rectanguloIcono7 {
     width: 110px;
     height: 110px;
-    transform: translate(-40px, 160px);
+    transform: translate(-26px, 150px);
   }
+  
   .playa {
     width: 450px;
     height: 440px;
@@ -17,7 +18,7 @@
     font-size: 42px;
     line-height: 56px;
     margin-top: 50px;
-    margin-left: 40px;
+    
   
     color: #2f343d;
     flex: none;
@@ -30,21 +31,32 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    margin-left: 40px;
-  
+    
     color: #2f343d;
     flex: none;
     order: 0;
     flex-grow: 0;
   }
-  
+  .tick {
+    left: 0px;
+    top: 0px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 0px;
+    margin-top: inherit;
+    display: flex;
+    align-items: center;
+  }
   .tick1 {
     margin-top: 30px;
-    margin-left: 40px;
+    
   }
   .tick2 {
     margin-top: 20px;
-    margin-left: 40px;
+    
   }
   .masInfo {
     margin-top: 40px;
@@ -85,8 +97,10 @@
         height: 280px;
         box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
-        margin-top: -50px;
+        margin-top: -30px;
+        margin-right: -35px;
       }
+    
       .australia {
         width: 295px;
         font-family: "Poppins";
@@ -94,6 +108,8 @@
         font-weight: 400;
         font-size: 30px;
         line-height: 42px;
+        margin-left: 0px;
+        margin-top: -200px;
       }
       .textAustralia {
         font-family: "Poppins";
@@ -101,9 +117,10 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 28px;
+        margin-left: 0px;
       }
       .tick1 {
-        width: 257px;
+        width: 300px;
         left: 0px;
         top: 0px;
         font-family: "Poppins";
@@ -111,10 +128,12 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
       }
-    
       .tick2 {
-        width: 257px;
+        width: 300px;
         left: 0px;
         top: 0px;
         font-family: "Poppins";
@@ -122,11 +141,15 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
       }
-      .tickrojo {
-        width: 41px;
-      }
+   
+    
+     
+      
       #masinfobutton2{
-        margin-left: 30px;
+        margin-left: 0px;
       }
   }

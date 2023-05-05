@@ -9,11 +9,19 @@
 
 @media (max-width:800px){
     .imgrectangulo{
-        display: none;
+        width: 100%;
+        margin: auto;
     }
-    .List{
-        display: none;
+    #List{
+        margin-top: 100px;
+        margin-left: 25px;
     }
+    /*.imgrectangulo{
+        display: none;
+    }*/
+    /*.List{
+        display: none;
+    }*/
 }
 
 @media (min-width:800px){
