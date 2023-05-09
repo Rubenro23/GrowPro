@@ -42,6 +42,8 @@ import { Getdatos } from "./services/datos";
 import { useState, useEffect } from "react";
 import Header from './components/GPHeader/Header';
 import HeaderMeeting from "./components/GPHeaderMeeting/HeaderMeeting";
+import Meeting from "./components/GPMeeting/Meeting";
+import MoreMeeting from "./components/GPMore-Meeting/moreMeeting";
 
 function App() {
   const tarjetas = [
@@ -100,7 +102,8 @@ function App() {
   }, []);
 
   console.log();
-  const headerBarc = true;
+  const headerBarc = true , meetingBarc = true , moreMeeting = true;
+ 
   return (
     <div>
       {headerBarc ? <HeaderMeeting/> : <Header/>}
@@ -108,9 +111,9 @@ function App() {
       <div className="principal">
       <main className="backgroundBody margenIcono">
       
-        <PorqueGrowpro></PorqueGrowpro>
+        {moreMeeting ? <MoreMeeting/> : <PorqueGrowpro/>}
 
-        <DescubreAustralia></DescubreAustralia>
+        {meetingBarc ? <Meeting/> : <DescubreAustralia/>}
 
         <div className="dondeEstudiar mb-4 ">
           <p>

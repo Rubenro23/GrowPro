@@ -1,0 +1,53 @@
+
+
+.Meeting-title{
+   width: 80%;
+    font-size: 2.5rem;
+    color: #000000;
+}
+.Meeting-Descr {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #000000;
+}
+.Register-meeting {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #000000;
+}
+.register {
+  width: 280px;
+  background-color: #7a33cc;
+  border-color: #7a33cc;
+  color: #fff;
+  border-radius: 30px;
+  padding: 18px;
+  border: 0;
+}
+.Img-meeting{
+    width: 100%;
+    border-radius: 50px;
+}
+
+@media(max-width:800px){
+    .Meeting-title{
+        font-size: 1.875rem;
+        width: 100%;
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+    .Meeting-Descr{
+        width: 100%;
+        margin-left: 0px;
+        font-weight: 400;
+    }
+    .Register-meeting{
+        margin-top: 10px;
+    }
+    .Img-meeting{
+        width: 330px;
+        margin-top: -30px;
+        margin-bottom: 50px;
+    }
+}
